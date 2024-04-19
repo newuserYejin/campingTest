@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiGocamping = axios.create({
-  baseURL: "http://apis.data.go.kr/B551011/GoCamping",
+  baseURL: "https://apis.data.go.kr/B551011/GoCamping",
   timeout: 3000,
 });
 

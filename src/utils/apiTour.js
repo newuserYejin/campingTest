@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiTour = axios.create({
-  baseURL: "http://apis.data.go.kr/B551011/KorService1",
+  baseURL: "https://apis.data.go.kr/B551011/KorService1",
   timeout: 3000,
 });
 
