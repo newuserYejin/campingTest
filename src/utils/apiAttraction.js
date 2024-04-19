@@ -1,6 +1,6 @@
 import axios from 'axios'
 // const TEST_API_KEY_EN = `HYuPePscXWsXZj8LTa900BZgb/66OeqfpbjmL5mjoYqMmd2mZ55p1glzPRGOwRsWXISJeiRhKygjhqMiEIPQLw==`
-const REACT_APP_API_KEY_DN_JIN = process.env.REACT_APP_API_KEY_DN_JIN
+const REACT_APP_API_KEY_EN_JIN = process.env.REACT_APP_API_KEY_EN_JIN
 
 const apiAttraction = axios.create({
     baseURL: 'http://apis.data.go.kr/B551011',
@@ -10,7 +10,7 @@ const apiAttraction = axios.create({
         MobileApp: "so",
         // radius: 20000,
         _type: "json",
-        serviceKey: `${REACT_APP_API_KEY_DN_JIN}`
+        serviceKey: `${REACT_APP_API_KEY_EN_JIN}`
         // serviceKey: `HYuPePscXWsXZj8LTa900BZgb%2F66OeqfpbjmL5mjoYqMmd2mZ55p1glzPRGOwRsWXISJeiRhKygjhqMiEIPQLw%3D%3D`
     },
     headers: {
