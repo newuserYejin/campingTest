@@ -3,7 +3,7 @@ import axios from 'axios'
 const REACT_APP_API_KEY_EN_JIN = process.env.REACT_APP_API_KEY_EN_JIN
 
 const apiAttraction = axios.create({
-    baseURL: 'http://apis.data.go.kr/B551011',
+    baseURL: 'https://apis.data.go.kr/B551011',
     // timeout: 1000,
     params: {
         MobileOS: "WIN",
