@@ -29,8 +29,8 @@ function App() {
           <Route index element={<EventListPage />} />
         </Route>
         {/* 아래 /campingdetail -> <CampingPage/>는 detail page 확인을 위해 임의로 만들었습니다. page연결시 지울예정 */}
-        <Route path="/campingsdetail">
-          <Route index element={<CampingPage />} />
+        <Route path="/campingsdetail" element={<CampingPage />}>
+          {/* <Route index element={<CampingPage />} /> */}
           <Route path=":contentId" element={<CampingDetailPage />} />
         </Route>
       </Route>
