@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "TTHakgyoansimMoheomgaB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimMoheomgaB.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+.camping-detail-main {
+  margin-top: 80px;
+}
+.camping-detail-main-img .img {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.camping-detail-second-grid {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+.camping-detail-second-grid h1 {
+  font-family: "TTHakgyoansimMoheomgaB";
+  text-align: center;
+  font-size: 3em;
+}
+.camping-detail-second-grid-urls {
+  text-align: center;
+  margin-top: 15px;
+}
+.camping-detail-url {
+  margin-right: 10px;
+  border-radius: 30px;
+  border: 2px solid rgb(22, 22, 144);
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 5px 10px;
+}
+.camping-detail-url:hover {
+  text-decoration: underline;
+  color: rgb(22, 22, 144);
+}
+.camping-detail-map-line {
+  border-top: 2px solid #4b494c36;
+  padding-top: 3em;
+  margin-top: 3em;
+}
+.camping-detail-weather-line {
+  border-top: 2px solid #4b494c36;
+  padding-top: 3em;
+  margin-top: 3em;
+  text-align: center;
+}
+.camping-detail-attraction-line{
+    border-top: 2px solid #4b494c36;
+  padding-top: 3em;
+  margin-top: 3em;
+  text-align: center;
+}
+.camping-detail-second-line {
+  margin-top: 3em;
+  text-align: center;
+  border-top: 2px solid #4b494c36;
+  border-bottom: 2px solid #4b494c36;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  font-size: 1.5em;
+}
+.camping-detail-second-line-count {
+  margin-top: 3em;
+  text-align: center;
+  width: 50%;
+}
+.camping-detail-second-line-count div {
+  border-top: 1px solid #4b494cb4;
+  display: flex;
+  justify-content: space-around;
+}
+.camping-detail-second-line-count span {
+  margin: 10px;
+}
+.camping-detail-second-line-count-first {
+  border-top: 1px solid #4b494cb4;
+}
+
+.comping-detail-table-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.comping-detail-table-area-inside {
+  width: 60%;
+}
+.comping-detail-table-area-title {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #4b494cd9;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+}
+.comping-detail-table-area-footer {
+  padding-top: 10px;
+  border-top: 2px solid #4b494cd9;
+  font-size: 12px;
+  color: #4b494ce7;
+}
+@media screen and (max-width: 600px) {
+  .camping-detail-main {
+    margin-top: 30px;
+  }
+  .camping-detail-main-img .img {
+    width: 100%;
+    background-size: cover;
+  }
+  .comping-detail-table-area-inside {
+    width: 100%;
+    /* 한글 기준으로 줄 바꿈 */
+    word-break: keep-all;
+  }
+  .camping-detail-second-grid {
+    padding-left: 2em;
+  }
+}

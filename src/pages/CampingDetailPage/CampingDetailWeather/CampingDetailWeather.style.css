@@ -1,0 +1,43 @@
+.camping-detail-weather h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+.camping-detail-weather h3 {
+  margin: 0.5em;
+  font-weight: 600;
+}
+.camping-detail-weather h6 {
+  margin: 1em;
+}
+.camping-detail-weather-box-5days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+.camping-detail-weather-box-1day {
+  border-right: 2px solid #4b494c36;
+  flex-direction: column;
+  padding: 2em;
+}
+.camping-detail-weather-box-5days img {
+  width: 80%;
+}
+.camping-detail-weather-box-lastday {
+  flex-direction: column;
+  padding: 2em;
+}
+.camping-detail-weather-box-area-mobile {
+  display: none;
+}
+.camping-detail-weather-box-mobile img {
+  width: 40%;
+}
+@media screen and (max-width: 600px) {
+  .camping-detail-weather-box-area-mobile {
+    display: block;
+  }
+  .camping-detail-weather-box-area {
+    display: none;
+  }
+}

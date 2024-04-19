@@ -1,0 +1,30 @@
+.list-gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: -1%;
+}
+
+.list-gallery-wrap .list-gallery-item {
+  width: 48%;
+  margin: 1%;
+}
+
+.loading_Zone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+@media screen and (max-width: 900px) {
+  .list-gallery-wrap {
+    display: block;
+    margin: 0px;
+  }
+
+  .list-gallery-wrap .list-gallery-item {
+    width: auto;
+    margin: 2em 0;
+  }
+}

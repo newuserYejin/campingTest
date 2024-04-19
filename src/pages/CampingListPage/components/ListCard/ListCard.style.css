@@ -1,0 +1,106 @@
+.list-item {
+  display: flex;
+  padding: 2em 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-item:first-child {
+  border-top: 1px solid #ddd;
+}
+
+.list-thumb {
+  width: 40%;
+}
+
+.list-thumb img {
+  width: 100%;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.list-thumb a {
+  display: block;
+
+  &:hover img {
+    filter: brightness(80%) saturate(150%);
+  }
+}
+
+.list-facltNm {
+  margin: 0 0 0.2em 0;
+  font-size: 2em;
+  a {
+    color: var(--main-font-color);
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.list-lineIntro {
+  margin: 0px 0 1.5em 0;
+  font-size: 1.2em;
+  a {
+    color: var(--main-font-color);
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.list-details {
+  padding-left: 2em;
+  width: 60%;
+}
+
+.list-info dl {
+  position: relative;
+  display: flex;
+  margin: 1em 0 0 0;
+}
+
+.list-info dt {
+  padding: 4px;
+  width: 120px;
+  height: 32px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  background: var(--key-color);
+  border-radius: 24px;
+}
+
+.list-info dd {
+  margin: 0;
+  padding: 4px 0px 4px 16px;
+  width: calc(100% - 120px);
+}
+
+.list-sbrsCl ul {
+  margin: -8px;
+  padding: 0px;
+}
+
+.list-sbrsCl li {
+  display: inline-block;
+  margin: 8px;
+  text-align: center;
+  list-style: none;
+}
+
+@media screen and (max-width: 900px) {
+  .list-item {
+    flex-direction: column;
+  }
+
+  .list-thumb {
+    width: auto;
+  }
+
+  .list-details {
+    width: auto;
+    padding: 1em;
+  }
+}

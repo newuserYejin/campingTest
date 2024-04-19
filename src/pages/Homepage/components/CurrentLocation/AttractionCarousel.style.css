@@ -1,0 +1,167 @@
+* {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+}
+
+.AttractionTitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.AttractionCarousel {
+    height: 100%;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-inner {
+    height: 100%;
+    width: 95%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.carousel-item {
+    height: 100%;
+    cursor: pointer;
+}
+
+.active.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+.contentItem {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    font-size: 1em;
+}
+
+.contentItem .title {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.contentItem .address {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0;
+    margin: 0;
+    max-width: 75%;
+    text-align: center;
+}
+
+.contentItem img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev span,
+.carousel-control-next span {
+    background-color: black;
+    color: white;
+}
+
+
+/* 아래버튼 */
+.carousel-indicators {
+    display: none;
+}
+
+.AttractionNo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-top: 0;
+}
+
+.ReccomendSurroungingCarousel {
+    max-height: 38vh;
+    margin-bottom: 10px;
+}
+
+@media (max-width:770px) {
+    .AttractionTitle {
+        font-size: 1.2em;
+    }
+
+    .contentItem {
+        font-size: 0.8em;
+    }
+
+    .contentItem .title {
+        font-size: 0.9em;
+    }
+
+    .contentItem .address {
+        max-width: 100%;
+    }
+
+    .contentItem img {
+        width: 16vw;
+        height: 16vw;
+        border-radius: 50%;
+    }
+
+    .ReccomendSurroungingCarousel {
+        max-height: 25vh;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 464px) {
+
+    .AttractionTitle {
+        font-size: 1em;
+    }
+
+    .contentItem {
+        width: 30%;
+        font-size: 0.5em;
+    }
+
+    .contentItem .title {
+        margin: 5px 0;
+        font-size: 1.5em;
+    }
+
+    .contentItem .address {
+        display: none;
+    }
+
+    .contentItem>div {
+        text-align: center;
+    }
+
+    .active>.carousel-inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contentItem img {
+        width: 16vw;
+        height: 16vw;
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,30 @@
+.camping-detail-map-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.camping-detail-map-area h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+.camping-detail-map-url-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.camping-detail-map-url-area div{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.camping-detail-map-url{
+  border-radius: 30px;
+  border: 2px solid rgb(22, 22, 144);
+    margin-top: 30px;
+  background-color: white;
+  padding: 5px 10px;
+   font-size: 1.2em;
+}

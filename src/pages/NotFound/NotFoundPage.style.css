@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "iceJaram-Rg";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceJaram-Rg.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: 600;
+}
+.not-found-page {
+  height: 100vh;
+  background-image: url(https://i.pinimg.com/originals/e9/de/32/e9de3284fe20c29fff9a8f3756826adf.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error-message {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.264);
+  width: max-content;
+  height: fit-content;
+  padding: 2em;
+}
+.error-quote {
+  font-family: "iceJaram-Rg";
+  font-size: 3em;
+}
+.error-message h3 {
+  font-size: 2em;
+  margin: 1em;
+}
+.error-page-button {
+  border: 2px solid white;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+}
+.error-page-button:hover {
+  color: rgb(153, 148, 148);
+}
+@media screen and (max-width: 600px) {
+  .not-found-page {
+    background-size: cover;
+  }
+}

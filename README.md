@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# 코알누 리액트 스터디 1기 7조의 팀 프로젝트 공간👩‍💻👩‍💻👩‍💻👩‍💻👨‍💻
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+캠핑 정보 안내 사이트를 함께 만들어 봅시다💪
 
-## Available Scripts
+- 참고 사이트: https://gocamping.or.kr
+<p>&nbsp;</p>
 
-In the project directory, you can run:
+## 사용된 라이브러리
 
-### `npm start`
+- mui
+- fontawesome
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**📢 작업하면서 추가로 설치되는 라이브러리는 이 목록에 추가해주세요**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p>&nbsp;</p>
 
-### `npm test`
+## git 정책
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+git flow를 사용합니다.
 
-### `npm run build`
+<p>&nbsp;</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## branch 전략
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+🌿 main
+🌿 develop
+      └─ feature/날짜_이름
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🌿 main branch
 
-### `npm run eject`
+<span style="color:red">💡 scrum master만 관리합니다</span>  
+main 브랜치는 **출시 가능한 프로덕션 코드**를 모아두는 브랜치.  
+main 브랜치는 프로젝트 시작 시 생성되며, 개발 프로세스 전반에 걸쳐 유지됩니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🌿 develop branch
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**다음 버전 개발을 위한 코드**를 모아두는 브랜치.  
+개발이 완료되면, main 브랜치로 merge합니다.(by scrum master)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🌿 feature branch
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+하나의 기능을 개발하기 위한 브랜치  
+<span style="color:red">develop 브랜치에서 생성</span>하며, 기능이 <span style="color:red">개발 완료되면 다시 develop 브랜치로 merge</span>합니다.  
+네이밍은 **`feature/240415_yourName`** 과 같은 형태로 생성합니다.
 
-## Learn More
+<p>&nbsp;</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## notice
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- pull 기준은 develop brach입니다.
+- 매일 작업 전, <span style="color:red">develop branch에서 `feature/날짜_이름`으로 branch를 따서 작업</span>합니다.
+- 하루 작업이 마무리되면 develop branch에 push합니다.
+- <span style="color:red">충돌 방지를 위해 push 전 반드시 pull 한번 받아주세요!!!!</span>
+- merge시 fast-forward로 merge하지 않고, <span style="color:red">merge commit을 생성하며 merge</span>를 해주어야 합니다.
+- commit 메세지에는 어느 부분을 작업했는지 알아 볼 수 있게 작성해주세요.
