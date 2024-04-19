@@ -52,7 +52,14 @@ const AttractionCarousel = ({ attractData, title }) => {
                   .slice(index * itemsPerPage, (index + 1) * itemsPerPage) // 5개씩 자른 배열을 만듭니다.
                   .map((item) => (
                     <div key={item.contentid} className="contentItem">
-                      <img src={`${item.firstimage}`} alt="대표 이미지" />
+                      <img
+                        src={`${
+                          item.firstimage ||
+                          item.firstimage2 ||
+                          require("../../../../assets/whatAboutCampingLogo.png")
+                        }`}
+                        alt="대표 이미지"
+                      />
                       <div className="title">{item.title}</div>
                       {item.addr1 && (
                         <div className="address">{item.addr1}</div>
